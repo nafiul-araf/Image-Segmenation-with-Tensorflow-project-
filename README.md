@@ -6,4 +6,4 @@ Image segmentation means the edge detection of an image. Here the digital is par
 
 ![Example2](https://github.com/nafiul-araf/Image-Segmenation-with-Tensorflow-project-/blob/main/train_pic.png)
 
-### Continue to improve the performances
+### Continuing to improve the performances
