@@ -5,6 +5,10 @@ import numpy as np
 import tensorflow as tf
 from matplotlib import pyplot as plt
 import seaborn as sns
+from tensorflow.keras.layers import *
+from tensorflow.keras.models import *
+from tensorflow.keras.callbacks import *
+import tensorflow.keras.backend as K
 
 class_names=['sky', 'building','column/pole', 'road', 'side walk', 'vegetation', 'traffic light', 'fence', 'vehicle', 
              'pedestrian', 'byciclist', 'void']
@@ -56,7 +60,7 @@ def map_filename_to_image_and_mask(t_filename, a_filename, height=224, width=224
 
 # Utilities for preparing the datasets
 
-BATCH_SIZE = 16
+BATCH_SIZE = 64
 
 def get_dataset_slice_paths(image_dir, label_map_dir):
   '''
